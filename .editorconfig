@@ -1,0 +1,49 @@
+
+root = true
+
+# Configuração padrão
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# TypeScript e JavaScript
+[*.{ts,tsx,js,jsx,mjs,cjs}]
+indent_style = space
+indent_size = 2
+
+# JSON e JSONC
+[*.{json,jsonc}]
+indent_style = space
+indent_size = 2
+
+# HTML, CSS e pré-processadores
+[*.{html,css,scss,sass,less}]
+indent_style = space
+indent_size = 2
+
+# YAML
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Markdown
+[*.md]
+trim_trailing_whitespace = false
+insert_final_newline = true
+
+# Shell scripts
+[*.{sh,bash,zsh}]
+indent_style = space
+indent_size = 2
+
+# Makefile exige tabs
+[Makefile]
+indent_style = tab
+
+# Arquivos Windows
+[*.{bat,cmd}]
+end_of_line = crlf
